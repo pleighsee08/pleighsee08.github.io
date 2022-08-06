@@ -1,13 +1,27 @@
 html {
-background-color: yellow;
+background-color: white;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1{
     color: gray;
+    font-size: 12px;
 }
 
 body {
     padding: 0;
     margin: 0;
     overflow-y: scroll;
+    line-height: 1.6em;
+}
+
+
+
+.slideshow{
+    margin:5px 10px 5px 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
 }
