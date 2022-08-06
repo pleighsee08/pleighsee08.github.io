@@ -8,11 +8,11 @@ var images = [];	// Images Array
 var time = 3000;	// Time Between Switch
 	 
 // Image List
-images[0] = "media/flower.png";
-images[1] = "media/abstract.PNG";
-images[2] = "media/amberriver.PNG";
-images[3] = "media/antiquerose.PNG";
-images[4] = "media/autumnflames.PNG";
+images[0] = "media\\flower.png";
+images[1] = "media\\abstract.PNG";
+images[2] = "media\\amberriver.PNG";
+images[3] = "media\\antiquerose.PNG";
+images[4] = "media\\autumnflames.PNG";
 images[5] = "media/bluebird.png";
 images[6] = "media/bluefeather.PNG";
 images[7] = "media/blueflower.PNG";
