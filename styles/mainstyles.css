@@ -1,29 +1,203 @@
-html {
-background-color: white;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-line-height: 1.6em;
-}
-
-h1{
-    color: gray;
-    font-size: 14px;
-}
-
 * {
     padding: 0;
-    margin: 0;
-    overflow-y: scroll;
-   
+    margin: 0;   
+}
+
+body {
+background-color: #fff;
+color: #000;
+font-size:16px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+line-height: 1.6em;
+
+}
+
+h1 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+    font-size: 26px
+}
+
+h2{
+    padding-top: 3%;
+    padding-left: 1%;
+    font-size: 16px;
+    font-weight:500;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+.clearfix{
+    clear: both;
 }
 
 
 
-.slideshow{
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+    padding-right: 15%;
+}
+
+#navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(26, 26, 206);
+}
+
+#navbar a:hover{
+    text-decoration: underline;
+}
+
+#navbar a:visited {
+    text-decoration: none;
+    color: rgb(26, 26, 206);
+}
+
+
+
+
+/*box for main image */
+.pbox {
+    width: 795px;
+    height: 785px;
+    /*border: 1px solid black; */
+    margin-top: 1%;
+    position: relative;
+    background-image:url(../media/bluebird_lg.png);
+    background-repeat: no-repeat;
+    background-position: center center; /*not needed as image same size as box*/
+}
+
+.pbox .maintitle{ /*the text positioned on the background pic box*/
+    display: block;
+    position: absolute;
+    bottom:10px;
+    left: 1%; 
+    font-size: 26px;
+    font-weight:500;
+}
+
+#showcase {
+    padding-bottom: 5%; /*push what comes next down*/
+}
+
+
+
+/* two-column layout in main section*/
+#mainblock{
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    padding-bottom: 5%; /*push what comes next down*/
+    /*border: red 1px solid; */
+}
+
+#sidebar{  
+    float: right;
+    width: 40%;
+    padding: 15px;
+    box-sizing: border-box;
+    /*border: black 1px solid; */
+}
+
+
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover{
+    background: #000;
+    color: #fff;
+}
+
+
+
+.slideshow {
     /*top right bottom left*/
     margin:5px 10px 5px 10px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+
+
+/*Contact Me form styles */
+.messageform{
+    padding: 0px 10px;
+}
+
+.messageform .form-group{
+    padding-bottom: 15px;
+}
+
+.messageform label {
+    display: block;
+}
+
+.messageform input[type="text"], .messageform textarea {
+    padding: 2px;
+    width: 100%;
+} 
+
+
+
+
+
+
+#mainfooter ul {
+    list-style: none;
+}
+
+#mainfooter li{
+    display: inline;
+    padding-right: 17%;
+}
+
+#mainfooter a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+#mainfooter a:hover{
+    text-decoration: underline;
+}
+
+#mainfooter a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+@media(max-width: 600px){
+    #mainblock{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+
+    
+    #navbar li, #mainfooter li{
+        display: block;
+        padding-right: 0%;
+        padding-left: 2%;
+    }
+    
+
 }
