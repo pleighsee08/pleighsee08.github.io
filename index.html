@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/mainstyles.css">
-    <script src="scripts/mainscript.js"></script> 
+   
     <title>Pamela See Art</title>
 
 </head>
@@ -13,6 +13,8 @@
         <header id="mainheader">
                 <div class="container">
                     <h1>Pamela See Art</h1>
+                    <!--item list search box -->
+                    <input type = "text" class="form-control" id="filter" placeholder="Search Items...">
                 </div>
         
         
@@ -40,6 +42,7 @@
                         Pamela See Art
                         </span> 
                     </p>
+                  
                 </div>
             </div>
         </section>        
@@ -58,7 +61,7 @@
            
             <div id="sidebar">
                 
-                    <form class="messageform" action="">
+                    <form class="messageform" action="" >
                         <div class="form-group">
                             Contact Me
                         </div>
@@ -77,6 +80,20 @@
                         </div>
                         <input class="button" type="submit" value="Submit" name="">
                     </form>
+                    
+                    <form id="addForm">
+                        <input id="item" type = "text" >
+                        <input class="button" type="submit" value="Add" name="addItem">
+                    </form>
+                    <ul id="items" class="list-group">
+                        <li class="list-group-item">Item 1 <button
+                             class="btn btn-danger btn-sm float-right delete">X</button></li>
+                        <li class="list-group-item">Item 2 <button
+                            class="btn btn-danger btn-sm float-right delete">X</button></li>
+                        <li class="list-group-item">Item 3 <button
+                            class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    </ul>
+
                 </div> <!--end of sidebar-->   
             </div><!--end of container-->
             <div class="clearfix"></div><!--clear the floats-->
@@ -92,6 +109,6 @@
             </ul> 
          </div>
     </footer>
-    
+<script src="scripts/mainscript.js"></script>    
 </body>
 </html>
